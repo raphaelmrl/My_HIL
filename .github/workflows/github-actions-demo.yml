@@ -20,12 +20,7 @@ jobs:
           esp_idf_version: latest
           target: esp32h2
           path: '.'
-      - name: Store Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: My_blink.bin 
-          path: |
-            build/My_blink.bin
+
 
       - run: ls -a
 
