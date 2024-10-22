@@ -12,6 +12,14 @@ jobs:
       
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+      - name: esp-idf build
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: latest
+          target: esp32h2
+          path: '.'
 
       - run: ls -a
 
