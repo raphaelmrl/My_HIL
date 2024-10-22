@@ -1,1 +1,12 @@
+name: Build Application
+on: 
+  workflow_dispatch : {}
 
+
+jobs:
+  build:
+    name: Build App
+    runs-on : ubuntu-latest
+    steps : 
+      - run: echo "tets"
+      
