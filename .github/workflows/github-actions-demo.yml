@@ -1,6 +1,6 @@
 name: Build Application
 on: 
-  workflow_dispatch : {}
+  workflow_dispatch : 
 
 
 jobs:
@@ -24,3 +24,9 @@ jobs:
 
       - run: ls -a
 
+      #- name: Store Artifacts
+       # uses: actions/upload-artifact@v4
+        #with:
+         # name: My_blink.bin 
+          #path: |
+           # build/My_blink.bin
