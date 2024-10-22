@@ -6,7 +6,12 @@ on:
 jobs:
   build:
     name: Build App
-    runs-on : ubuntu-latest
+    runs-on : ubuntu-22.04
     steps : 
-      - run: echo "tets"
+      - run: echo "tets"$
       
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - run: echo "tets"$
+
