@@ -23,9 +23,9 @@ jobs:
 
       - run: ls -a
 
-      #- name: Store Artifacts
-       # uses: actions/upload-artifact@v4
-        #with:
-         # name: My_blink.bin 
-          #path: |
-           # build/My_blink.bin
+      - name: Store Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: My_blink.bin 
+          path: |
+            build/My_blink.bin
