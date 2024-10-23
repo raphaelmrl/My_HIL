@@ -42,7 +42,7 @@ void app_main(void)
         vTaskDelay(pdMS_TO_TICKS(500));
         led_strip_clear(led_strip);
         printf("Off\n");
-        vTaskDelay(pdMS_TO_TICKS(200));
+        vTaskDelay(pdMS_TO_TICKS(50));
 
 
         led_strip_set_pixel(led_strip, 0, 40, 40, 40);
@@ -51,7 +51,7 @@ void app_main(void)
         vTaskDelay(pdMS_TO_TICKS(500));
         led_strip_clear(led_strip);
         printf("Off\n");
-        vTaskDelay(pdMS_TO_TICKS(200));
+        vTaskDelay(pdMS_TO_TICKS(50));
 
         led_strip_set_pixel(led_strip, 0, 40, 0, 0);
         led_strip_refresh(led_strip);
@@ -59,7 +59,7 @@ void app_main(void)
         vTaskDelay(pdMS_TO_TICKS(500));
         led_strip_clear(led_strip);
         printf("Off\n");
-        vTaskDelay(pdMS_TO_TICKS(200));
+        vTaskDelay(pdMS_TO_TICKS(50));
 
 
 
