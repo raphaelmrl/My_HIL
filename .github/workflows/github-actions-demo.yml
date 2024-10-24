@@ -31,4 +31,6 @@ jobs:
         with:
           name: My_blink.bin 
           path: |
-            build/My_blink.bin
+            build/bootloader/bootloader.bin        # Bootloader
+            build/partition_table/partition-table.bin  # Partition table
+            build/My_blink.bin                     # Ton fichier de firmware
