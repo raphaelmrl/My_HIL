@@ -22,15 +22,13 @@ jobs:
           target: esp32h2
           path: '.'
           
-      - run: | 
-          cd build/bootloader
-          ls -a
+
 
       - name: Store Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: My_blink.bin 
           path: |
-            build/bootloader/bootloader.bin        # Bootloader
-            build/partition_table/partition-table.bin  # Partition table
-            build/My_blink.bin                     # Ton fichier de firmware
+            build/bootloader/bootloader.bin        
+            build/partition_table/partition-table.bin  
+            build/My_blink.bin                    
