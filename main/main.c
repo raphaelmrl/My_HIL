@@ -61,9 +61,6 @@ void app_main(void)
         printf("Off\n");
         vTaskDelay(pdMS_TO_TICKS(50));
 
-
-
-
     }
 
 
