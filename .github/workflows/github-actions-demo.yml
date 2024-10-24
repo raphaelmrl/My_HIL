@@ -12,7 +12,6 @@ jobs:
         run: |
           sudo usermod -aG docker $USER
           newgrp docker
-          docker run hello-world
       
       - name: Checkout repository
         uses: actions/checkout@v4
