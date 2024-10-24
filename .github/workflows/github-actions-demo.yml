@@ -27,7 +27,7 @@ jobs:
       - name: Store Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: My_blink.bin 
+          name: binaires 
           path: |
             build/bootloader/bootloader.bin        
             build/partition_table/partition-table.bin  
