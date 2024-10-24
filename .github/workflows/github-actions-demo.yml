@@ -9,7 +9,7 @@ jobs:
     runs-on : [self-hosted, esp32]
     steps : 
       - name : test_docker
-        run: docker run hello-world
+        run: sudo docker run hello-world
       
       - name: Checkout repository
         uses: actions/checkout@v4
