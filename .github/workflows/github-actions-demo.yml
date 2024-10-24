@@ -9,10 +9,8 @@ jobs:
     runs-on : [self-hosted, esp32]
     steps : 
       - name : test_docker
-        run: |
-          sudo usermod -aG docker $USER
-          newgrp docker
-      
+        run: docker run hello-world
+        
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
