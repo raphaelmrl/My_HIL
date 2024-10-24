@@ -22,6 +22,9 @@ jobs:
           target: esp32h2
           path: '.'
           
+      - run: | 
+          cd build/bootloader
+          ls -a
 
       - name: Store Artifacts
         uses: actions/upload-artifact@v4
