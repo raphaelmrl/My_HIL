@@ -10,6 +10,8 @@ jobs:
     steps : 
       - name : test_docker
         run: docker run hello-world
+      - name: Check Runner User
+        run: whoami
         
       - name: Checkout repository
         uses: actions/checkout@v4
