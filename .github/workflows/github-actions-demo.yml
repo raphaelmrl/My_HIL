@@ -35,7 +35,7 @@ jobs:
             build/bootloader/bootloader.bin        
             build/partition_table/partition-table.bin  
             build/My_blink.bin  
-      -
+            
       - name: Flash esp 
         run: |
           ls -a
