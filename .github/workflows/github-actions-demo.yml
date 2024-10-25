@@ -8,12 +8,13 @@ jobs:
     name: Build App
     runs-on : [self-hosted, esp32]
     steps : 
-      - name: Check Runner User
-        run: whoami
-      - name : test_docker
-        run: docker run hello-world
+
       - name: print port
         run : ls /dev/tty*
+
+      - name: Adjust permissions
+        run: sudo chmod -R 777 /home/raphael_unix/actions-runner/_work/
+      
         
       - name: Checkout repository
         uses: actions/checkout@v4
