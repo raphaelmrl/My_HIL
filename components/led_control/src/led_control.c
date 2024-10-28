@@ -1,4 +1,4 @@
-// led_utils.c
+// led_control.c
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -60,7 +60,7 @@ void led_cycle(led_strip_handle_t led_strip)
         led_off(led_strip);
         vTaskDelay(pdMS_TO_TICKS(50));
 
-        led_on(led_strip, 40, 0, 0);
+        led_on(led_strip, 0, 40, 0);
         vTaskDelay(pdMS_TO_TICKS(500));
         led_off(led_strip);
         vTaskDelay(pdMS_TO_TICKS(50));
