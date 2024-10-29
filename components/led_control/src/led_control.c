@@ -60,9 +60,12 @@ void led_cycle(led_strip_handle_t led_strip)
         led_off(led_strip);
         vTaskDelay(pdMS_TO_TICKS(50));
 
-        led_on(led_strip, 0, 40, 0);
+        led_strip_set_pixel(led_strip, 0, 40, 0, 0);
+        led_strip_refresh(led_strip);
+        printf("LED On final\n");
         vTaskDelay(pdMS_TO_TICKS(500));
-        led_off(led_strip);
+        led_strip_clear(led_strip);
+        printf("LED Off final\n");
         vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
