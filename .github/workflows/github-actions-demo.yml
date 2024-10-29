@@ -41,5 +41,9 @@ jobs:
           ls -a
           . $HOME/esp/esp-idf/export.sh
           esptool.py --chip esp32h2 --baud 460800 write_flash 0x0000 build/bootloader/bootloader.bin 0x10000 build/My_blink.bin 0x8000 build/partition_table/partition-table.bin
+      
+      - name : Run pytest
+        run : pytest tests/test_led_control.py --embedded-services esp,idf,serial --port /dev/ttyUSB0 
+        
         
             
